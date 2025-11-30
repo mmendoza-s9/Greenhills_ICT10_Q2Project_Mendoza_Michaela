@@ -1,0 +1,56 @@
+body {
+text-align: center;
+background-color:  rgb(255, 255, 255);  
+font-family: "Fredoka", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+}
+
+
+input[type=text] {
+width: 70%;
+padding: 9px;
+margin: 10px 0;
+box-sizing: border-box;
+border: 1px solid rgb(178, 10, 10);
+border-radius: 6px;
+}
+
+input[type=number] {
+width: 30%;
+padding: 9px;
+margin: 10px 0;
+box-sizing: border-box;
+border: 1px solid rgb(152, 13, 13);
+border-radius: 6px;
+}
+
+.button {
+  background-color: #7a0909;
+  border: none;   
+  color: white;
+  padding: 5px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.container {
+background-color: rgb(224, 228, 240);
+margin-top:15px;
+border-radius: 20px;
+max-width: 500px;
+padding: 15px;
+}
+
+.header {
+background-color: rgb(159, 159, 181);
+margin-left: auto;
+margin-right: auto;
+border-radius: 6px;
+}

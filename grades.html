@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PY LINK -->
+     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <!-- BS LINK -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FONT 1 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <h5 class="navbar-brand" href="#">(School Name)</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grades.html">Grade Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clubs.html">Clubs</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+    
+<div class="container mt-5">
+<form>
+    <h1>Student Grade <br> Calculator</h1>
+    <label for="name">First Name:</label><br>
+    <input type="text" id="fname">
+    <br><br>
+
+    <label for="age">Last Name:</label><br>
+    <input type="text" id="lname">  
+    <br><br>
+</form>
+
+<form>
+    <h2>Enter Your Grades</h2>
+    <label for="name">English</label><br>
+    <input type="number" id="english"><br>
+
+    <label for="name">Math</label><br>
+    <input type="number" id="math"><br>
+
+    <label for="name">Social Studies</label><br>
+    <input type="number" id="ss"><br>
+
+    <label for="name">Music</label><br>
+    <input type="number" id="music"><br>
+
+    <label for="name">Physical Education</label><br>
+    <input type="number" id="pe"><br>
+
+    <label for="name">Values Education</label><br>
+    <input type="number" id="ve"><br>
+</form>
+
+<br>
+<input type="button" class="button" py-click="student_gwa" value="Calculate GWA">
+
+<br>
+<div class="header">
+<div id="output"></div>
+</div>
+<py-script src="main.py"></py-script>
+</body>
+</html>
